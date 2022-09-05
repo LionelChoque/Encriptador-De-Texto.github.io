@@ -1,0 +1,258 @@
+*{
+    margin:0px;
+    padding:0px;
+} 
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+.logo-container{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    /* background-color:aqua; */
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    width:100%;
+    height:100%;
+    /* background-color: green; */
+}
+.section1{
+    width: 70%;
+    height:100%;
+}
+#textarea{
+    width:700px;
+    height:500px;
+    display: block;
+    margin: 5% auto;
+    resize: none;
+    font-size: 32px;
+    border: none;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    
+}
+.btn-container{
+    width:70%;
+    height:60%; 
+    margin: auto;
+    text-align: center;   
+}
+.btn-encrypt, .btn-decrypt{
+    width:40%;
+    height:50px;
+    margin:0 15px;
+    margin-bottom: 50px;
+    
+}
+
+.section2{
+    width: 25%;
+    min-height: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: -2% 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.img-container{
+    width: 100%;
+    height: 60%;
+    padding-top: 20%;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.h3-container{
+    width: 100%;
+    height: 20%;
+    padding: 10% 10px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.p-container{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10% 10px;
+    box-sizing: border-box;
+}
+.result-container{
+    margin: 20px;
+    font-size: 24px;
+}
+.btn-copy-container{
+    text-align: center;
+
+}
+.btn-copy{
+    float:initial;
+    width: 70%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.btn-encrypt, .btn-decrypt, .btn-copy{
+    border-radius: 15px;
+    border: solid 1px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-encrypt:hover, .btn-decrypt:hover, .btn-copy:hover{
+    transition: 200ms;
+    transform: scale(1.1);
+}
+.btn-encrypt:active, .btn-decrypt:active, .btn-copy:active{
+    transform: scale(0.98);
+}
+.btn-encrypt, .btn-copy{
+    background-color: #0A3871;
+    color:#ffffff;
+}
+.btn-decrypt{
+    background-color: #D8DFE8;
+    color:#0A3871;
+    border-color: #0A3871;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 30px 
+    /* background-color: chocolate; */
+}
+.hidden{
+    display: none;
+}
+.auoHeight{
+    height: none;
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        box-sizing: border-box;
+    }
+    .section1{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height:800px;
+        width: 100%;
+    }
+    #textarea{
+        margin:20px;
+        width: 400px;
+        height: inherit;
+    }
+    .btn-container{
+        height: 60px;
+        margin:0;
+        width: 100%;
+    }
+    .section2{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 85%;
+        margin: 40px;
+        justify-content: space-evenly;
+        align-content: center;
+        border-radius: 30px;
+    }
+    .img-container{
+        display: none;
+    }
+    .h3-container{
+        padding: 15px;
+    }
+    .btn-encrypt, .btn-decrypt, .btn-copy{
+        margin: 0 10px;
+        width: 40%;
+    }
+    .result-encrypt{
+        height: auto;
+    }
+    .btn-copy-container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        box-sizing: border-box;
+    }
+    img{
+        height: 70%;
+    }
+    .section1{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height:450px;
+        width: 100%;
+    }
+    #textarea{
+        margin:20px;
+        width: 90%;
+        height: inherit;
+    }
+    .btn-container{
+        height: 60px;
+        margin:0;
+        width: 100%;
+    }
+    .section2{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 85%;
+        margin: 40px;
+        justify-content: space-evenly;
+        align-content: center;
+        border-radius: 30px;
+    }
+    .img-container{
+        display: none;
+    }
+    .h3-container{
+        padding: 15px;
+    }
+    .btn-encrypt, .btn-decrypt, .btn-copy{
+        margin: 0 10px;
+        width: 40%;
+    }
+    .result-encrypt{
+        height: auto;
+    }
+    .btn-copy-container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
