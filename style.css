@@ -16,7 +16,7 @@ body{
 
 main{
     width: 100%;
-    height: 90%;
+    height: 90vh;
     /* background-color: brown; */
     display: flex;
     justify-content: space-between;
@@ -31,20 +31,20 @@ section{
     height:100%;
 }
 #textarea{
-    width:700px;
-    height:500px;
+    width:70%;
+    height: 70%;
     display: block;
     margin: 5% auto;
     resize: none;
     font-size: 32px;
-    border: none;
+    border: 0;
+    outline: none;
     background-color: #E5E5E5;
     color: #0A3871;
     
 }
 .btn-container{
     width:70%;
-    height:60%; 
     margin: auto;
     text-align: center;   
 }
@@ -52,7 +52,7 @@ section{
     width:40%;
     height:50px;
     margin:0 15px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     
 }
 
@@ -67,13 +67,15 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     
 }
 .img-container{
-    width: 100%;
+    width: 80%;
     height: 60%;
     padding-top: 20%;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 img{
     max-width: 100%;
@@ -160,8 +162,8 @@ footer{
     }
     #textarea{
         margin:20px;
-        width: 400px;
-        height: inherit;
+        max-width: 70%;
+        height: 80%;
     }
     .btn-container{
         height: 60px;
@@ -186,24 +188,33 @@ footer{
     .h3-container{
         padding: 15px;
     }
+    .p-container{
+        display:none;
+    }
     .btn-encrypt, .btn-decrypt, .btn-copy{
         margin: 0 10px;
         width: 40%;
     }
     .result-encrypt{
         height: auto;
+        padding-top: 20px;
     }
+    .result-encrypt::-webkit-scrollbar {
+        width: 12px;               
+      }
     .btn-copy-container{
         width: 100%;
         margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 400px) {
+    
     main{
         display: flex;
         flex-direction: column;
         align-items:center;
         box-sizing: border-box;
+     
     }
     img{
         height: 70%;
@@ -213,13 +224,15 @@ footer{
         text-align: center;
         flex-direction: column;
         align-items: center;
-        height:450px;
+        height:50%;
         width: 100%;
     }
     #textarea{
         margin:20px;
         width: 90%;
-        height: inherit;
+        height: 70%;
+        font-size: 1.5rem;
+        
     }
     .btn-container{
         height: 60px;
@@ -243,6 +256,7 @@ footer{
     }
     .h3-container{
         padding: 15px;
+        font-size: 0.9rem;
     }
     .btn-encrypt, .btn-decrypt, .btn-copy{
         margin: 0 10px;
@@ -250,6 +264,7 @@ footer{
     }
     .result-encrypt{
         height: auto;
+        font-size: 1rem;
     }
     .btn-copy-container{
         width: 100%;

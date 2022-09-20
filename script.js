@@ -21,6 +21,7 @@ function recoveryText(){
     return area.value;
 }
 function hiddenElement(){
+    document.querySelector(".result-container").classList.remove("hidden");
     imgContainer.classList.add("hidden");
     h3Container.classList.add("hidden");
     pContainer.classList.add("hidden");
@@ -85,6 +86,7 @@ function decrypt(message){
 //Copy to clipBoard
 document.querySelector(".btn-copy").addEventListener("click",()=>{
     copyToClipBoard(resultEncrypt);
+   
 })
 
 function copyToClipBoard(elemnt){
@@ -95,6 +97,11 @@ function copyToClipBoard(elemnt){
     document.execCommand("copy");
     inputHidden.classList.add("hidden");
     alert("Copiado!");
+    document.querySelector("#textarea").value="";
+    document.querySelector(".result-container").classList.add("hidden");
+    document.querySelector(".img-container").classList.remove("hidden");
+    document.querySelector(".h3-container").classList.remove("hidden");
+    document.querySelector(".p-container").classList.remove("hidden");
 }
 //Responsive tablet
 
